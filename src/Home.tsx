@@ -51,7 +51,8 @@ const Home = () => {
             size="lg"
             fontSize="20px"
             as="a"
-            href="mailto:contactbuilt.business@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contactbuilt.business@gmail.com"
+            target="_blank"
           >
             Get in touch
           </Button>
