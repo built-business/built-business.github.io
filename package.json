@@ -1,5 +1,6 @@
 {
-  "name": "buuilt-website",
+  "homepage": "https://built.business",
+  "name": "built-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
