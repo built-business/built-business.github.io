@@ -1,5 +1,23 @@
-import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import React, { useState } from "react";
+
+const EmailButton = () => {
+  const [email, setEmail] = useState("");
+  return (
+    <>
+      <Box
+        color="#F95679"
+        fontSize="20px"
+        onClick={() => setEmail("contactbuilt.business@gmail.com")}
+      >
+        <span role="img" aria-label="hand">
+          📬 {"  "}
+        </span>
+        {email ? email : "Get in touch"}
+      </Box>
+    </>
+  );
+};
 
 const Home = () => {
   return (
@@ -33,7 +51,7 @@ const Home = () => {
             experiences.
           </Heading>
           <Text p="5">
-            We take care of all your technology needs. We specialize in {" "}
+            We take care of all your technology needs. We specialize in{" "}
             <Text as="span" fontWeight="600">
               Mobile Apps,
             </Text>{" "}
@@ -45,17 +63,7 @@ const Home = () => {
             </Text>{" "}
             and much more. Contact us to get a free consultation.
           </Text>
-          <Button
-            color="#F95679"
-            variant="ghost"
-            size="lg"
-            fontSize="20px"
-            as="a"
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contactbuilt.business@gmail.com"
-            target="_blank"
-          >
-            Get in touch
-          </Button>
+          <EmailButton />
         </Box>
       </Box>
     </>
