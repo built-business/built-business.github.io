@@ -1,5 +1,6 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
+import ParticlesBg from "particles-bg";
 
 const EmailButton = () => {
   const [email, setEmail] = useState("");
@@ -29,6 +30,7 @@ const Home = () => {
         flexDir="column"
         textAlign="center"
         py="4"
+        minH="100vh"
       >
         <Image
           src="/bighead.svg"
@@ -65,6 +67,8 @@ const Home = () => {
           </Text>
           <EmailButton />
         </Box>
+
+        <ParticlesBg num={3} type="ball" bg={true} />
       </Box>
     </>
   );
